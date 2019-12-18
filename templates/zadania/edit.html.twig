@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Zadania{% endblock %}
+
+{% block body %}
+    <h1>Edit Zadania</h1>
+
+    {{ include('zadania/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('zadania_index') }}">back to list</a>
+
+    {{ include('zadania/_delete_form.html.twig') }}
+{% endblock %}
